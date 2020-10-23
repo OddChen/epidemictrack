@@ -11,7 +11,7 @@ function  VisMap(props){
     </div>
   )
 }
-function  Progress(props){
+function  Onsite(props){
   return (
     <div className="contentItem">
       <h1>进展</h1>
@@ -31,7 +31,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       newData: null,
-      navList: ['疫情地图','最新进展','太原疫情','境外输入'],
+      navList: ['疫情地图','最新进展','太原疫情','直击现场'],
       tabIndex: 0,
       barStyle:{
         left: '22px'
@@ -88,9 +88,9 @@ class App extends React.Component {
         </div>
         <div className="content" style={this.state.contentStyle}> 
           <VisMap></VisMap>
-          <Progress></Progress>
-          <Ty></Ty>
           <NewsCom></NewsCom>
+          <Ty></Ty>
+          <Onsite></Onsite>
         </div>
       </div>
     );
