@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.navItem{
+    width: 93.5px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 16px;
+}
+.navItem.active{
+    font-weight: 900;
+}
+.nav .bar{
+    position: absolute;
+    width: 44px;
+    height: 5px;
+    background-color: orangered;
+    top: 39px;
+    transition: .5s ease;
+}
+
+.content{
+    width: 1500px;
+    display: flex;
+    height: calc(100vh-45px);
+    transform: .5s ease;
+}
+.contentItem{
+    width: 375px;
+}
